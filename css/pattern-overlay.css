@@ -1,0 +1,66 @@
+/* Pattern Overlay Styles */
+
+.geometric-pattern {
+  --pattern-blue: #2e58a6;
+  --pattern-green: #27ae60;
+  --pattern-orange: #e67e22;
+  --pattern-white: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.pattern-shape {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.square {
+  border-radius: 0;
+}
+
+.half-circle {
+  border-radius: 0 0 50% 50%;
+}
+
+.shape-blue {
+  background-color: var(--pattern-blue);
+}
+
+.shape-green {
+  background-color: var(--pattern-green);
+}
+
+.shape-orange {
+  background-color: var(--pattern-orange);
+}
+
+/* Animation for subtle movement */
+@keyframes patternFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+  100% { transform: translateY(0); }
+}
+
+.pattern-shape {
+  animation: patternFloat 8s ease-in-out infinite;
+  animation-delay: calc(var(--delay) * 0.5s);
+}

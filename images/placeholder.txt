@@ -1,0 +1,8 @@
+Please replace these placeholder images with your actual images:
+
+1. logo.png - Your company logo
+2. hero-image.jpg - Main hero image (use image 4 from your attachments)
+3. about.jpg - About section image (use image 2 from your attachments)
+4. gallery1.jpg, gallery2.jpg, gallery3.jpg - Gallery images (use image 3 from your attachments for one of these)
+
+The website is designed to work with these image filenames. If you use different filenames, please update the references in the index.html file.

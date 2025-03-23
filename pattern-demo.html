@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Pattern Demo</title>
+    <link rel="stylesheet" href="css/pattern-overlay.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .pattern-container {
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+        
+        .pattern-row {
+            display: flex;
+            height: 50px;
+        }
+        
+        .pattern-element {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .blue-circle {
+            background-color: #2e58a6;
+            border-radius: 50%;
+        }
+        
+        .green-square {
+            background-color: #27ae60;
+        }
+        
+        .orange-triangle {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .orange-triangle::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 50px 50px;
+            border-color: transparent transparent #e67e22 transparent;
+        }
+        
+        .blue-half {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .blue-half::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #2e58a6;
+            border-radius: 0 0 0 50px;
+        }
+        
+        .green-triangle {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .green-triangle::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 50px 0 0 50px;
+            border-color: transparent transparent transparent #27ae60;
+        }
+        
+        .orange-circle {
+            background-color: #e67e22;
+            border-radius: 50%;
+        }
+        
+        .title {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .description {
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .download-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 10px;
+            background: linear-gradient(45deg, #2e58a6, #27ae60);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">الحارس للصناعات الهندسية - نمط التصميم</h1>
+    <p class="description">هذا النمط الهندسي يعكس روح الابتكار والدقة في شركة الحارس للصناعات الهندسية، حيث تتناغم الأشكال والألوان لتعبر عن التميز والاحترافية في كل ما نقدمه.</p>
+    
+    <div class="pattern-container">
+        <!-- Row 1 -->
+        <div class="pattern-row">
+            <div class="pattern-element blue-circle"></div>
+            <div class="pattern-element green-square"></div>
+            <div class="pattern-element blue-circle"></div>
+            <div class="pattern-element green-square"></div>
+            <div class="pattern-element blue-circle"></div>
+            <div class="pattern-element green-square"></div>
+            <div class="pattern-element blue-circle"></div>
+            <div class="pattern-element green-square"></div>
+        </div>
+        <!-- Row 2 -->
+        <div class="pattern-row">
+            <div class="pattern-element orange-triangle"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element orange-triangle"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element orange-triangle"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element orange-triangle"></div>
+            <div class="pattern-element blue-half"></div>
+        </div>
+        <!-- Row 3 -->
+        <div class="pattern-row">
+            <div class="pattern-element green-square"></div>
+            <div class="pattern-element orange-circle"></div>
+            <div class="pattern-element green-square"></div>
+            <div class="pattern-element orange-circle"></div>
+            <div class="pattern-element green-square"></div>
+            <div class="pattern-element orange-circle"></div>
+            <div class="pattern-element green-square"></div>
+            <div class="pattern-element orange-circle"></div>
+        </div>
+        <!-- Row 4 -->
+        <div class="pattern-row">
+            <div class="pattern-element orange-triangle"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element orange-triangle"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element orange-triangle"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element orange-triangle"></div>
+            <div class="pattern-element blue-half"></div>
+        </div>
+        <!-- Row 5 -->
+        <div class="pattern-row">
+            <div class="pattern-element blue-circle"></div>
+            <div class="pattern-element green-triangle"></div>
+            <div class="pattern-element blue-circle"></div>
+            <div class="pattern-element green-triangle"></div>
+            <div class="pattern-element blue-circle"></div>
+            <div class="pattern-element green-triangle"></div>
+            <div class="pattern-element blue-circle"></div>
+            <div class="pattern-element green-triangle"></div>
+        </div>
+        <!-- Row 6 -->
+        <div class="pattern-row">
+            <div class="pattern-element green-triangle"></div>
+            <div class="pattern-element orange-circle"></div>
+            <div class="pattern-element green-triangle"></div>
+            <div class="pattern-element orange-circle"></div>
+            <div class="pattern-element green-triangle"></div>
+            <div class="pattern-element orange-circle"></div>
+            <div class="pattern-element green-triangle"></div>
+            <div class="pattern-element orange-circle"></div>
+        </div>
+        <!-- Row 7 -->
+        <div class="pattern-row">
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element blue-half"></div>
+            <div class="pattern-element blue-half"></div>
+        </div>
+        <!-- Row 8 -->
+        <div class="pattern-row">
+            <div class="pattern-element orange-circle"></div>
+            <div class="pattern-element green-square"></div>
+            <div class="pattern-element orange-circle"></div>
+            <div class="pattern-element green-square"></div>
+            <div class="pattern-element orange-circle"></div>
+            <div class="pattern-element green-square"></div>
+            <div class="pattern-element orange-circle"></div>
+            <div class="pattern-element green-square"></div>
+        </div>
+    </div>
+    
+    <a href="index.html" class="download-btn">العودة إلى الموقع الرئيسي</a>
+</body>
+</html>
