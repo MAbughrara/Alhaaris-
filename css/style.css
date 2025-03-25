@@ -977,6 +977,17 @@ footer a {
         padding: 0.6rem 1rem;
     }
     
+    /* Ensure language switcher is visible on mobile */
+    .language-switcher {
+        display: flex !important;
+        align-items: center;
+    }
+    
+    .language-switcher .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    
     .section-title {
         font-size: 2rem;
     }
@@ -1001,5 +1012,19 @@ footer a {
     
     .section-title {
         font-size: 1.8rem;
+    }
+    
+    /* Further optimize language switcher for very small screens */
+    .navbar-brand .logo-img {
+        height: 80px !important;
+    }
+    
+    .language-switcher {
+        margin-right: 0.5rem !important;
+    }
+    
+    .language-switcher .btn {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.7rem;
     }
 }
