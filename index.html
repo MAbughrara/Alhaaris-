@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" id="htmlRoot">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الحارس للصناعات الهندسية - ALHAARIS For Engineering Industry</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <!-- Bootstrap RTL for Arabic and LTR for English will be loaded dynamically -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" id="bootstrap-css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pattern-overlay.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -26,23 +27,34 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">الرئيسية</a>
+                        <a class="nav-link lang-ar" href="#home">الرئيسية</a>
+                        <a class="nav-link lang-en" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">من نحن</a>
+                        <a class="nav-link lang-ar" href="#about">من نحن</a>
+                        <a class="nav-link lang-en" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">خدماتنا</a>
+                        <a class="nav-link lang-ar" href="#services">خدماتنا</a>
+                        <a class="nav-link lang-en" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#why-us">لماذا نحن</a>
+                        <a class="nav-link lang-ar" href="#why-us">لماذا نحن</a>
+                        <a class="nav-link lang-en" href="#why-us">Why Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#clients">عملاؤنا</a>
+                        <a class="nav-link lang-ar" href="#clients">عملاؤنا</a>
+                        <a class="nav-link lang-en" href="#clients">Clients</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                        <a class="nav-link lang-ar" href="#contact">تواصل معنا</a>
+                        <a class="nav-link lang-en" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <div class="language-switcher">
+                            <button class="btn btn-sm btn-outline-primary lang-switch" data-lang="ar">العربية</button>
+                            <button class="btn btn-sm btn-outline-primary lang-switch" data-lang="en">English</button>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -55,9 +67,12 @@
             <!-- Removed the spacer row -->
             <div class="row h-100 align-items-center">
                 <div class="col-lg-6 pattern-accent pattern-right">
-                    <h1 class="display-4 fw-bold mb-4">الحارس للصناعات الهندسية</h1>
-                    <p class="lead mb-4">مرحبًا بكم في شركة الحارس للصناعات الهندسية، الشركة الرائدة في مجال الصناعات الهندسية. نقدم حلولًا متكاملة ومتطورة في مجالات الصناعات الحديدية، وصناعات PVC، وصناعات الألمنيوم، والصناعات الزجاجية.</p>
-                    <a href="#contact" class="btn btn-primary btn-lg">تواصل معنا</a>
+                    <h1 class="display-4 fw-bold mb-4 lang-ar">الحارس للصناعات الهندسية</h1>
+                    <h1 class="display-4 fw-bold mb-4 lang-en">ALHAARIS For Engineering Industry</h1>
+                    <p class="lead mb-4 lang-ar">مرحبًا بكم في شركة الحارس للصناعات الهندسية، الشركة الرائدة في مجال الصناعات الهندسية. نقدم حلولًا متكاملة ومتطورة في مجالات الصناعات الحديدية، وصناعات PVC، وصناعات الألمنيوم، والصناعات الزجاجية.</p>
+                    <p class="lead mb-4 lang-en">Welcome to ALHAARIS For Engineering Industry, a leading company in the engineering industry. We provide comprehensive and advanced solutions in iron industries, PVC industries, aluminum industries, and glass industries. Our commitment to the highest quality standards and innovation ensures that we deliver exceptional products and services to our clients.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg lang-ar">تواصل معنا</a>
+                    <a href="#contact" class="btn btn-primary btn-lg lang-en">Contact Us</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image position-relative">
@@ -76,7 +91,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5 pattern-accent pattern-bottom">
-                    <h2 class="section-title">من نحن</h2>
+                    <h2 class="section-title lang-ar">من نحن</h2>
+                    <h2 class="section-title lang-en">About Us</h2>
                     <div class="section-divider"></div>
                 </div>
             </div>
@@ -90,20 +106,25 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="ps-lg-4">
-                        <p class="about-text">نحن في شركة الحارس نفتخر بكوننا إحدى الشركات الرائدة في الصناعات الهندسية، حيث نمتلك خبرة واسعة وفريقًا متخصصًا من المهندسين والفنيين المتميزين. نعمل على تطوير وتصنيع منتجات عالية الجودة تلبي احتياجات مختلف القطاعات الصناعية والتجارية، مع التركيز على الابتكار والاستدامة.</p>
+                        <p class="about-text lang-ar">نحن في شركة الحارس نفتخر بكوننا إحدى الشركات الرائدة في الصناعات الهندسية، حيث نمتلك خبرة واسعة وفريقًا متخصصًا من المهندسين والفنيين المتميزين. نعمل على تطوير وتصنيع منتجات عالية الجودة تلبي احتياجات مختلف القطاعات الصناعية والتجارية، مع التركيز على الابتكار والاستدامة.</p>
+                        <p class="about-text lang-en">At ALHAARIS For Engineering Industry, we take pride in being one of the leading companies in the engineering industry. With extensive experience and a specialized team of engineers and skilled technicians, we develop and manufacture high-quality products that meet the needs of various industrial and commercial sectors, with a strong focus on innovation and sustainability.</p>
                         <div class="row mt-5">
                             <div class="col-md-6">
                                 <div class="feature-item">
                                     <i class="fas fa-medal feature-icon"></i>
-                                    <h4>الجودة العالية</h4>
-                                    <p>نلتزم بتقديم منتجات عالية الجودة وفق أحدث المعايير.</p>
+                                    <h4 class="lang-ar">الجودة العالية</h4>
+                                    <h4 class="lang-en">High Quality</h4>
+                                    <p class="lang-ar">نلتزم بتقديم منتجات عالية الجودة وفق أحدث المعايير.</p>
+                                    <p class="lang-en">We are committed to delivering high-quality products following the latest standards.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="feature-item">
                                     <i class="fas fa-lightbulb feature-icon"></i>
-                                    <h4>الابتكار</h4>
-                                    <p>نحرص على تطوير تقنيات حديثة تلبي احتياجات عملائنا.</p>
+                                    <h4 class="lang-ar">الابتكار</h4>
+                                    <h4 class="lang-en">Innovation</h4>
+                                    <p class="lang-ar">نحرص على تطوير تقنيات حديثة تلبي احتياجات عملائنا.</p>
+                                    <p class="lang-en">We continuously develop modern technologies to meet our clients' needs.</p>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +139,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5 pattern-accent pattern-bottom">
-                    <h2 class="section-title">خدماتنا</h2>
+                    <h2 class="section-title lang-ar">خدماتنا</h2>
+                    <h2 class="section-title lang-en">Our Services</h2>
                     <div class="section-divider"></div>
                 </div>
             </div>
@@ -131,12 +153,19 @@
                         <div class="service-icon">
                             <i class="fas fa-cogs"></i>
                         </div>
-                        <h3>الصناعات الحديدية</h3>
-                        <ul class="service-list">
+                        <h3 class="lang-ar">الصناعات الحديدية</h3>
+                        <h3 class="lang-en">Iron Industries</h3>
+                        <ul class="service-list lang-ar">
                             <li>تصميم وتصنيع الهياكل المعدنية</li>
                             <li>تنفيذ المشروعات المعدنية الكبيرة والصغيرة</li>
                             <li>إنتاج الأبواب والنوافذ الحديدية</li>
                             <li>تصنيع وتركيب المستودعات والهناقر المعدنية</li>
+                        </ul>
+                        <ul class="service-list lang-en">
+                            <li>Design and manufacture of metal structures.</li>
+                            <li>Execution of large and small-scale metal projects.</li>
+                            <li>Production of various types of iron doors and windows.</li>
+                            <li>Manufacturing and installation of metal warehouses and hangars.</li>
                         </ul>
                     </div>
                 </div>
@@ -146,12 +175,19 @@
                         <div class="service-icon">
                             <i class="fas fa-window-maximize"></i>
                         </div>
-                        <h3>صناعات PVC</h3>
-                        <ul class="service-list">
+                        <h3 class="lang-ar">صناعات PVC</h3>
+                        <h3 class="lang-en">PVC Industries</h3>
+                        <ul class="service-list lang-ar">
                             <li>تصنيع الأبواب والنوافذ بأنظمة PVC</li>
                             <li>حلول العزل الحراري والصوتي</li>
                             <li>تجهيزات داخلية وخارجية بتصاميم حديثة</li>
                             <li>منتجات مقاومة للعوامل البيئية</li>
+                        </ul>
+                        <ul class="service-list lang-en">
+                            <li>Manufacturing of PVC doors and windows resistant to environmental factors.</li>
+                            <li>Thermal and sound insulation solutions.</li>
+                            <li>Interior and exterior fittings with modern and stylish designs.</li>
+                            <li>Products resistant to environmental factors.</li>
                         </ul>
                     </div>
                 </div>
@@ -161,12 +197,19 @@
                         <div class="service-icon">
                             <i class="fas fa-door-open"></i>
                         </div>
-                        <h3>صناعات الألمنيوم</h3>
-                        <ul class="service-list">
+                        <h3 class="lang-ar">صناعات الألمنيوم</h3>
+                        <h3 class="lang-en">Aluminum Industries</h3>
+                        <ul class="service-list lang-ar">
                             <li>إنتاج أبواب ونوافذ الألمنيوم عالية الجودة</li>
                             <li>تنفيذ الواجهات الزجاجية والألمنيومية</li>
                             <li>تصميم وتنفيذ أنظمة السقف المعلق</li>
                             <li>الدرابزينات الألمنيومية</li>
+                        </ul>
+                        <ul class="service-list lang-en">
+                            <li>Production of high-quality aluminum doors and windows.</li>
+                            <li>Implementation of aluminum and glass facades for commercial and residential buildings.</li>
+                            <li>Design and execution of suspended ceiling systems and aluminum railings.</li>
+                            <li>Aluminum railings and balustrades.</li>
                         </ul>
                     </div>
                 </div>
@@ -176,12 +219,19 @@
                         <div class="service-icon">
                             <i class="fas fa-building"></i>
                         </div>
-                        <h3>الصناعات الزجاجية</h3>
-                        <ul class="service-list">
+                        <h3 class="lang-ar">الصناعات الزجاجية</h3>
+                        <h3 class="lang-en">Glass Industries</h3>
+                        <ul class="service-list lang-ar">
                             <li>تصنيع وتركيب الواجهات الزجاجية</li>
                             <li>إنتاج زجاج الديكور والتصاميم الداخلية</li>
                             <li>حلول زجاجية للمباني التجارية والفنادق</li>
                             <li>زجاج مقاوم للكسر والعوامل الجوية</li>
+                        </ul>
+                        <ul class="service-list lang-en">
+                            <li>Manufacturing and installation of glass facades and curtain walls.</li>
+                            <li>Production of decorative glass for interior designs and architectural features.</li>
+                            <li>Glass solutions for commercial buildings, hotels, and public spaces.</li>
+                            <li>Shatterproof and weather-resistant glass products.</li>
                         </ul>
                     </div>
                 </div>
@@ -190,7 +240,8 @@
             <!-- Service Gallery Section -->
             <div class="row">
                 <div class="col-12 text-center mb-4">
-                    <h3 class="sub-section-title">نماذج من أعمالنا</h3>
+                    <h3 class="sub-section-title lang-ar">نماذج من أعمالنا</h3>
+                    <h3 class="sub-section-title lang-en">Our Work Samples</h3>
                 </div>
             </div>
             <div class="row g-4">
@@ -198,7 +249,8 @@
                     <div class="gallery-item">
                         <img src="images/gallery/arc-welding-steel-construction-site.jpg" alt="أعمال اللحام" class="img-fluid rounded">
                         <div class="gallery-overlay">
-                            <h4>أعمال اللحام والتركيب</h4>
+                            <h4 class="lang-ar">أعمال اللحام والتركيب</h4>
+                            <h4 class="lang-en">Welding and Installation Works</h4>
                         </div>
                     </div>
                 </div>
@@ -206,7 +258,8 @@
                     <div class="gallery-item">
                         <img src="images/gallery/big-storehouse-with-construction-materials-inside-wholesale.jpg" alt="مستودعات وهناجر" class="img-fluid rounded">
                         <div class="gallery-overlay">
-                            <h4>المستودعات والهناجر</h4>
+                            <h4 class="lang-ar">المستودعات والهناجر</h4>
+                            <h4 class="lang-en">Warehouses and Hangars</h4>
                         </div>
                     </div>
                 </div>
@@ -214,7 +267,8 @@
                     <div class="gallery-item">
                         <img src="images/gallery/empty-closed-door(1).jpg" alt="أبواب معدنية" class="img-fluid rounded">
                         <div class="gallery-overlay">
-                            <h4>الأبواب والنوافذ</h4>
+                            <h4 class="lang-ar">الأبواب والنوافذ</h4>
+                            <h4 class="lang-en">Doors and Windows</h4>
                         </div>
                     </div>
                 </div>
@@ -227,7 +281,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5 pattern-accent pattern-bottom">
-                    <h2 class="section-title">لماذا نحن؟</h2>
+                    <h2 class="section-title lang-ar">لماذا نحن؟</h2>
+                    <h2 class="section-title lang-en">Why Choose Us?</h2>
                     <div class="section-divider"></div>
                 </div>
             </div>
@@ -237,8 +292,10 @@
                         <div class="why-us-icon">
                             <i class="fas fa-award"></i>
                         </div>
-                        <h3>الجودة العالية</h3>
-                        <p>نلتزم بتقديم منتجات عالية الجودة وفق أحدث المعايير العالمية.</p>
+                        <h3 class="lang-ar">الجودة العالية</h3>
+                        <h3 class="lang-en">High Quality</h3>
+                        <p class="lang-ar">نلتزم بتقديم منتجات عالية الجودة وفق أحدث المعايير العالمية.</p>
+                        <p class="lang-en">We are committed to providing high-quality products according to the latest international standards.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
@@ -246,8 +303,10 @@
                         <div class="why-us-icon">
                             <i class="fas fa-lightbulb"></i>
                         </div>
-                        <h3>الابتكار</h3>
-                        <p>نحرص على تطوير تقنيات حديثة تلبي احتياجات عملائنا المتنوعة.</p>
+                        <h3 class="lang-ar">الابتكار</h3>
+                        <h3 class="lang-en">Innovation</h3>
+                        <p class="lang-ar">نحرص على تطوير تقنيات حديثة تلبي احتياجات عملائنا المتنوعة.</p>
+                        <p class="lang-en">We focus on developing modern technologies that meet the diverse needs of our clients.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
@@ -255,8 +314,10 @@
                         <div class="why-us-icon">
                             <i class="fas fa-users"></i>
                         </div>
-                        <h3>الخبرة والكفاءة</h3>
-                        <p>لدينا فريق عمل متخصص ذو خبرة طويلة في مختلف الصناعات الهندسية.</p>
+                        <h3 class="lang-ar">الخبرة والكفاءة</h3>
+                        <h3 class="lang-en">Experience and Efficiency</h3>
+                        <p class="lang-ar">لدينا فريق عمل متخصص ذو خبرة طويلة في مختلف الصناعات الهندسية.</p>
+                        <p class="lang-en">We have a specialized team with extensive experience in various engineering industries.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
@@ -264,8 +325,10 @@
                         <div class="why-us-icon">
                             <i class="fas fa-clock"></i>
                         </div>
-                        <h3>التسليم في الوقت المحدد</h3>
-                        <p>نعمل على تنفيذ المشاريع وتسليمها في الوقت المحدد لضمان رضا العملاء.</p>
+                        <h3 class="lang-ar">التسليم في الوقت المحدد</h3>
+                        <h3 class="lang-en">On-Time Delivery</h3>
+                        <p class="lang-ar">نعمل على تنفيذ المشاريع وتسليمها في الوقت المحدد لضمان رضا العملاء.</p>
+                        <p class="lang-en">We work on executing projects and delivering them on time to ensure customer satisfaction.</p>
                     </div>
                 </div>
             </div>
@@ -277,13 +340,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5 pattern-accent pattern-top">
-                    <h2 class="section-title">عملاؤنا</h2>
+                    <h2 class="section-title lang-ar">عملاؤنا</h2>
+                    <h2 class="section-title lang-en">Our Clients</h2>
                     <div class="section-divider"></div>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-lg-8 mx-auto">
-                    <p class="lead mb-5">نخدم مجموعة واسعة من القطاعات، بما في ذلك:</p>
+                    <p class="lead mb-5 lang-ar">نخدم مجموعة واسعة من القطاعات، بما في ذلك:</p>
+                    <p class="lead mb-5 lang-en">We serve a wide range of sectors, including:</p>
                 </div>
             </div>
             <div class="row">
@@ -292,7 +357,8 @@
                         <div class="client-icon">
                             <i class="fas fa-industry"></i>
                         </div>
-                        <h4>القطاع الصناعي والتجاري</h4>
+                        <h4 class="lang-ar">القطاع الصناعي والتجاري</h4>
+                        <h4 class="lang-en">Industrial and Commercial Sector</h4>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
@@ -300,7 +366,8 @@
                         <div class="client-icon">
                             <i class="fas fa-hard-hat"></i>
                         </div>
-                        <h4>شركات المقاولات والبناء</h4>
+                        <h4 class="lang-ar">شركات المقاولات والبناء</h4>
+                        <h4 class="lang-en">Construction and Building Companies</h4>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
@@ -308,7 +375,8 @@
                         <div class="client-icon">
                             <i class="fas fa-university"></i>
                         </div>
-                        <h4>المؤسسات الحكومية والخاصة</h4>
+                        <h4 class="lang-ar">المؤسسات الحكومية والخاصة</h4>
+                        <h4 class="lang-en">Government and Private Institutions</h4>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
@@ -316,7 +384,8 @@
                         <div class="client-icon">
                             <i class="fas fa-home"></i>
                         </div>
-                        <h4>المشاريع السكنية والفندقية</h4>
+                        <h4 class="lang-ar">المشاريع السكنية والفندقية</h4>
+                        <h4 class="lang-en">Residential and Hotel Projects</h4>
                     </div>
                 </div>
             </div>
@@ -330,17 +399,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5 pattern-accent pattern-left">
-                    <h2 class="section-title">تواصل معنا</h2>
+                    <h2 class="section-title lang-ar">تواصل معنا</h2>
+                    <h2 class="section-title lang-en">Contact Us</h2>
                     <div class="section-divider"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="contact-info">
-                        <h3 class="mb-4">معلومات الاتصال</h3>
+                        <h3 class="mb-4 lang-ar">معلومات الاتصال</h3>
+                        <h3 class="mb-4 lang-en">Contact Information</h3>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p>العنوان: تاجوراء - بجوار الاشارة الضوئية القلب</p>
+                            <p class="lang-ar">العنوان: تاجوراء - بجوار الاشارة الضوئية القلب</p>
+                            <p class="lang-en">Address: Tajura - Next to the Heart Traffic Light</p>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
@@ -364,7 +436,8 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="map-container">
-                        <h3 class="mb-4">موقعنا على الخريطة</h3>
+                        <h3 class="mb-4 lang-ar">موقعنا على الخريطة</h3>
+                        <h3 class="mb-4 lang-en">Our Location on the Map</h3>
                         <div class="map-wrapper rounded shadow">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26673.22344926712!2d13.312336699999997!3d32.8843389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8f6337eaad649%3A0x6d2485abe610c5a!2sTajura%2C%20Libya!5e0!3m2!1sen!2sus!4v1716526197832!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>

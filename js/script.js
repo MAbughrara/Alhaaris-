@@ -1,4 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Language switching functionality
+    const langSwitchButtons = document.querySelectorAll('.lang-switch');
+    const htmlRoot = document.getElementById('htmlRoot');
+    const bootstrapCSS = document.getElementById('bootstrap-css');
+
+    // Set initial active state based on current language
+    const currentLang = htmlRoot.getAttribute('lang') || 'ar';
+    langSwitchButtons.forEach(btn => {
+        if (btn.getAttribute('data-lang') === currentLang) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Handle language switching
+    langSwitchButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            
+            // Update HTML lang attribute and direction
+            htmlRoot.setAttribute('lang', lang);
+            
+            // Switch Bootstrap CSS (RTL for Arabic, LTR for English)
+            if (lang === 'ar') {
+                bootstrapCSS.setAttribute('href', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css');
+            } else {
+                bootstrapCSS.setAttribute('href', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+            }
+            
+            // Update active state of language buttons
+            langSwitchButtons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
     // Initialize logo variables for transportation effect
     const heroLogoContainer = document.getElementById('hero-logo-container');
     const navbarLogo = document.querySelector('.navbar-brand .logo-img');
